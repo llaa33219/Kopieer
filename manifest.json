@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "엔트리-Kopieer",
+  "version": "1.0",
+  "description": "실수로 복사본으로 저장하는것을 막아줍니다.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://playentry.org/*"],
+      "js": ["content.js"],
+      "css": ["modal.css"]
+    }
+  ]
+} 
